@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SAMKO - Hussein.lol</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Music Player -->
+    <div class="music-player">
+        <button class="play-btn" id="playBtn">
+            <i class="fas fa-play" id="playIcon"></i>
+        </button>
+        <div class="volume-control">
+            <i class="fas fa-volume-up"></i>
+            <input type="range" id="volumeSlider" min="0" max="100" value="50" class="volume-slider">
+        </div>
+    </div>
+    <audio id="backgroundMusic" loop>
+        <source src="OUD.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <!-- Header with tagline -->
+        <header class="header">
+            <p class="tagline">I build cool stuff on the web… and fix it when it breaks (usually).</p>
+        </header>
+
+        <!-- Discord Profile Card -->
+        <div class="discord-card">
+            <div class="discord-header">
+                <div class="avatar-container">
+                    <div class="avatar">
+                        <img src="sam.gif" alt="SAMKO Avatar">
+                    </div>
+                    <div class="status-indicator online"></div>
+                </div>
+                <div class="user-info">
+                    <div class="username">
+                        <span class="name">SAMKO</span>
+                        <span class="discriminator">#7xa</span>
+                    </div>
+                    <div class="badges">
+                        <div class="badge verified">
+                            <img src="badge1.png" alt="Verified Badge">
+                        </div>
+                        <div class="badge nitro">
+                            <img src="badge2.png" alt="Nitro Badge">
+                        </div>
+                        <div class="badge boost">
+                            <img src="badge3.png" alt="Boost Badge">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="discord-bio">
+                <p>Cybersecurity engineering student, web developer, and cloud computing enthusiast. When I'm not neck-deep in code, I'm either playing the Ney or hunting for my next musical instrument.</p>
+            </div>
+            
+            <div class="discord-links">
+                <a href="https://discord.com/users/788858256192962570" class="link-item" target="_blank">
+                    <i class="fab fa-discord"></i>
+                    <span>Discord</span>
+                </a>
+                <a href="https://boxie.gg" class="link-item" target="_blank">
+                    <i class="fas fa-globe"></i>
+                    <span>Website</span>
+                </a>
+                <a href="https://hussein.bio" class="link-item" target="_blank">
+                    <i class="fas fa-user"></i>
+                    <span>Bio Page</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Projects Grid -->
+        <div class="projects-section">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">boxie.gg</h3>
+                        <div class="project-status live">
+                            <i class="fas fa-circle"></i>
+                            <span>Live</span>
+                        </div>
+                    </div>
+                    <p class="project-description">A full-featured platform designed to enhance communities experiences.</p>
+                    <a href="https://boxie.gg" class="project-link" target="_blank">
+                        <i class="fas fa-external-link-alt"></i>
+                        <span>Visit Project</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">The Last</h3>
+                        <div class="project-status live">
+                            <i class="fas fa-circle"></i>
+                            <span>Live</span>
+                        </div>
+                    </div>
+                    <p class="project-description">Community for gamers, devs, and tech enthusiasts.</p>
+                    <a href="https://discord.gg/tl" class="project-link" target="_blank">
+                        <i class="fab fa-discord"></i>
+                        <span>Join Community</span>
+                    </a>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <h3 class="project-title">TLU</h3>
+                        <div class="project-status coming-soon">
+                            <i class="fas fa-clock"></i>
+                            <span>Coming Soon</span>
+                        </div>
+                    </div>
+                    <p class="project-description">A unique, in-progress project providing custom tech tools for communities.</p>
+                    <div class="project-link disabled">
+                        <i class="fas fa-lock"></i>
+                        <span>Coming Soon…</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
